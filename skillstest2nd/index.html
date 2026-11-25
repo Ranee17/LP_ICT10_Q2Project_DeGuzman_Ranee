@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Non-Metal Checker</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.2.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.2.3/core.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #20243a;
+            padding: 40px;
+        }
+
+        .container {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: #6254a3;
+            text-align: center;
+        }
+
+        p {
+            color: #555;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #c5bde8;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6254a3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    
+        #result {
+            background-color: #f1effa;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .home-dorito {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 100px;
+        }
+
+        .home-dorito img {
+        width: 100%;
+        display: block;
+        }
+
+        .home-dorito span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 11px;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px black;
+        text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="../index.html" class="home-dorito">
+    <img src="doritoback.png" alt="Dorito">
+    <span>HOME</span>
+    </a>
+
+    <div class="container">
+
+        <h1>NON-METAL CHECKER</h1>
+
+        <p>Enter a non-metal element symbol for it's information.</p>
+
+        <input type="text" id="element-input">
+
+        <button py-click="get_element_info">
+    Search Element
+</button>
+
+        <div id="result">
+            <b>Element Information</b>
+            <p>Your search results will appear here.</p>
+        </div>
+
+    </div>
+
+    <script type="py" src="./main.py"></script>
+
+</body>
+</html>
